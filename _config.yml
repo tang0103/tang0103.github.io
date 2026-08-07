@@ -2,70 +2,49 @@
 # 网站设置
 # -----------------------------------------------------------------------------
 
-
-Title: Blank # About Me
-First_name: Li
-Middle_name:
-Last_name: Tang
+title: Blank # About Me
+first_name: Li
+middle_name:
+last_name: Tang
 contact_note: >
-You can also add a brief note indicating which of these methods is the best way to reach you.
-Description: > “>”符号表示忽略所有换行符，直到遇到“footer_text:”为止。
-A simple, minimalist theme designed for academic use. Based on the design of [*folio*](https://github.com/bogoli/-folio).
+  You can also add a brief note indicating which of these methods is the best way to reach you.
+description: >
+  A simple, minimalist theme designed for academic use. Based on the design of [*folio*](https://github.com/bogoli/-folio).
 footer_text: >
-Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, with the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-Keywords: Jekyll, Jekyll-Theme, academic-website, portfolio-website # Please add your own keywords, or leave the field empty.
-Language: en # The language of your website (e.g.: en, fr, cn, ru, etc.)
-Icon: ⚛️ # This is the emoji used as the favicon. Alternatively, you can provide the image name in /assets/img/.
-apple_touch_icon: The name of the image located in /assets/img/ (or a root path/absolute URL), used for iOS home screen bookmarks. It needs to be a 180x180 PNG image. Since Safari ignores emoji icons, a screenshot of the page will be used instead. Leave this field empty, otherwise iOS will use a screenshot of the page instead.
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, with the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+keywords: Jekyll, Jekyll-Theme, academic-website, portfolio-website
+lang: en
+icon: ⚛️
+apple_touch_icon:
 
-
-URL: https://tang0103.github.io # This is the base hostname and protocol for your site.
-Baseurl: /al-folio# This is the subpath of your website, for example, /blog/. Leave it blank if you want to use the root path.
-last_updated: false # Set to true if you want to display the last updated date in the footer section.
-Impressum_path: # This parameter specifies the path where the Impressum link is located in the footer. This path should be the same as the permalink used for pages. This helps to ensure compliance with EU GDPR regulations.
-back_to_top: true # Set it to false to disable the “Back to Top” button
-
+url: https://tang0103.github.io
+baseurl:
+last_updated: false
+impressum_path:
+back_to_top: true
 
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
 
-
-# 仓库颜色主题
-Repo_theme_light: Default theme # https://github.com/stats-organization/github-stats-extended/blob/master/packages/core/src/themes/README.md
-repo_theme_dark: Dark theme # https://github.com/stats-organization/github-stats-extended/blob/master/packages/core/src/themes/README.md
-# By default, addresses are split during compilation, so the HTML code does not contain any such split results.
-# `user@host` and no `mailto:` for those who want to scrape data from harvesters. Clicking on this link will copy the data.
-# Instead of opening an email client, I’m saving the content to the clipboard.
-# See “Protecting email addresses from scrapers” in the docs/CUSTOMIZE.md file.
+repo_theme_light: default
+repo_theme_dark: dark
 protect_email: false
 
-
-# By default, the free public GitHub-profile service is disabled.
-# (It seems that Vercel’s deployment configuration is set to respond with HTTP 402 / DEPLOYMENT_DISABLED. So, all trophies…
-# Image 404 errors. The project itself remains open source and free to use – you can host it yourself.
-# Please visit the external_services.github_profile_trophy_url link for more information about your instance. Then, set it accordingly.
-# enabled: true. See the documentation at CUSTOMIZE.md for more details.
 repo_trophies:
-enabled: false
-ThemeLight: Flat # https://github.com/ryo-ma/github-profile-trophy
-theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
+  enabled: false
+  theme_light: flat
+  theme_dark: gitdimmed
 
-
-# External service URLs for repository pages
-# 若要使用不同的实例或服务来显示 GitHub 统计数据和徽章信息，请点击此处进行设置。
-# Updating these URLs. They are used in the repository templates.
-External Services:
-github-readme-statistics-url: https://github-stats-extended.vercel.app
-github_profile_trophy_url: https://github-profile-trophy.vercel.app
-
+external_services:
+  github_readme_stats_url: https://github-stats-extended.vercel.app
+  github_profile_trophy_url: https://github-profile-trophy.vercel.app
 
 # -----------------------------------------------------------------------------
 # al-folio API (v1.x)
 # -----------------------------------------------------------------------------
 
-
 al_folio:
-api_version: 1
+  api_version: 1
